@@ -1,4 +1,4 @@
-# <div align="center"> Cartao-de-blog 🗒️ </div>
+# <div align="center"> Cartão de Visualização de Blog 🗒️ </div>
   
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
