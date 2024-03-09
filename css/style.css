@@ -23,67 +23,127 @@ body {
 
 .card {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
+  padding: 24px;
+  border-radius: 20px;
   border: 1px solid #000;
-  box-shadow: 5px 3px 10px rgb(0, 0, 0);
-  width: 360px;
-  height: 500px;
-  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  width: 384px;
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .card .img {
   width: 100%;
 }
 .card .img img {
-  width: 320px;
-  border-radius: 15px;
+  width: 336px;
+  height: 200px;
+  border-radius: 10px;
 }
-.card .learning {
-  margin: 10px 0;
-  background-color: var(--amarelo);
-  width: 90px;
-  border-radius: 5px;
-  padding: 5px 15px;
+.card .content {
+  width: 336px;
+  height: 194px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.card .content .category {
+  width: 82px;
+  height: 29px;
+  background-color: #f4d04e;
+}
+.card .content .category p {
+  width: 58px;
   font-weight: 700;
-  cursor: pointer;
-}
-.card .publi {
-  margin: 10px 0;
-}
-.card h1 {
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 23px;
-  margin: 20px 0;
-}
-.card h1:hover {
-  color: var(--amarelo);
-}
-.card p {
-  color: var(--cinza);
+  color: #000;
   font-size: 14px;
-  line-height: 20px;
+  padding: 5px 10px;
 }
-.card .id {
-  margin: 20px 0;
+.card .content .publishdate {
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+}
+.card .content .title {
+  font-weight: 800;
+  height: 96px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.card .id img {
-  width: 50px;
+.card .content .title:hover {
+  color: #f4d04e;
 }
-.card .id span {
+.card .content .description {
+  color: #808080;
+  height: 72px;
+  font-size: 16px;
+  line-height: 150%;
+}
+.card .author {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.card .author img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.card .author span {
   font-weight: 800;
+  font-size: 14px;
 }
 
 .attribution {
-  color: hsla(0, 0%, 0%, 0.549);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  color: #808080;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
 }
 .attribution a {
-  color: #000;
+  color: #808080;
   cursor: pointer;
+  transition: 0.3s;
 }
 .attribution a:hover {
-  font-weight: 700;
+  color: #000;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
+  .card .img img {
+    width: 279px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .card .content {
+    width: 279px;
+    height: 173px;
+  }
+  .card .content .category {
+    width: 73px;
+  }
+  .card .content .publishdate {
+    width: 123px;
+    font-size: 12px;
+  }
+  .card .content .title {
+    font-size: 20px;
+    height: 30px;
+  }
+  .card .content .description {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

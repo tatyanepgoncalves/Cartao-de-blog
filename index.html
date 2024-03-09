@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Blog preview card</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -19,15 +14,23 @@
       <div class="img">
         <img src="images/illustration-article.svg" alt="image">
       </div>
-      <div class="learning">Learning</div>
-      <span class="publi">Published 21 Dec 2023</span>
-      <h1>HTML & CSS foundations</h1>
-      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      <div class="id">
+
+      <div class="content">
+        <div class="category">
+          <p>Learning</p> 
+        </div>
+
+        <div class="publishdate">Published 21 Dec 2023</div>
+        <h1 class="title">HTML & CSS foundations</h1>
+        <div class="description">These languages are the backbone of every website, defining structure, content, and presentation.</div>
+      </div> <!-- end content -->
+
+      <div class="author">
         <img src="images/image-avatar.webp" alt="greg">
         <span>Greg Hooper</span>
       </div>
-    </div>
+
+    </div> <!-- end card -->
     
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
